@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="contailner m-2 bg-danger-subtle p-3">
+      <div class="d-flex" role="search">
+        <input
+          id="txtInput"
+          class="form-control me-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+        <button
+          class="btn btn-outline-success"
+          type="submit"
+          onclick="searchCountry()"
+        >
+          Search
+        </button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <img
+          class="img-thumbnail"
+          id="flagImg"
+          width="50px"
+          src=""
+          alt="flag"
+        />
+        <h1 id="name">Name</h1>
+        <p id="name">Name</p>
+        <p id="officialName">Official Name</p>
+        <p id="region">Region</p>
+        <p id="population">Population</p>
+        <p id="area">Area</p>
+        <p id="timezones">Time Zone</p>
+      </div>
+    </div>
+
+    <h1 class="text-center bg-danger-subtle p-3 fw-bolder">Countries</h1>
+    <table
+      class="table table-dark w-75 tbl table-center"
+      id="tblCountries"
+      border="1"
+    ></table>
+
+    <script src="app.js"></script>
+  </body>
+</html>
